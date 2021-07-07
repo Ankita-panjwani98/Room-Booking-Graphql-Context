@@ -1,0 +1,154 @@
+
+# DELETE USER
+# mutation{
+#   deleteUser(id:"60dc7c992d36175ea88c248a") {
+#     firstName
+#   }
+# }
+
+
+#DELETE ROOM
+# mutation{
+#   deleteRoom(id:"60dd8d2a7d1d334e50b9cdee") {
+# 	id
+#   }
+# }
+
+#ADD/POST USER
+# mutation{
+#   addRoom(
+#     roomCategory: "Double Royal Deluxe",
+#     roomPrice:250,
+#     roomImages:["https://q-xx.bstatic.com/xdata/images/hotel/840x460/205684046.jpg?k=edd4b442376ac9cf1784cb06c8de0dc8a6037a871e50f060ba8bbcdc297cb74a&o="],
+#     roomDescription:"Comforatble Double Royal Deluxe Room",
+#     roomSize:300,
+#     maxCapacityOfpersons:2,
+#     extraFacilities:["2 Towels", "Soaps", "Facewash"],
+#     bookedFrom:"2020-06-16",
+#     bookedTill:"2020-06-20"
+  
+#   ){
+#     roomCategory,
+#     roomPrice,
+#     roomImages,
+#     roomDescription,
+#     roomSize,
+#     maxCapacityOfpersons,
+#     extraFacilities,
+#     bookedFrom,
+#     bookedTill
+#   }
+# }
+
+#UPDATE ROOM
+# mutation{
+#  updateRoom(
+#   	id:"60dd8d2a7d1d334e50b9cdee",
+#     roomCategory: "Doub Royal Deluxe",
+#     roomPrice:250,
+#     roomImages:["https://q-xx.bstatic.com/xdata/images/hotel/840x460/205684046.jpg?k=edd4b442376ac9cf1784cb06c8de0dc8a6037a871e50f060ba8bbcdc297cb74a&o="],
+#     roomDescription:"Comforatble Double Royal Deluxe Room",
+#     roomSize:300,
+#     maxCapacityOfpersons:2,
+#     extraFacilities:["2 Towels", "Soaps", "Facewash"],
+#     bookedFrom:"2020-06-16",
+#     bookedTill:"2020-06-20"
+  
+#   ){
+#     id,
+#     roomCategory,
+#     roomPrice,
+#     roomImages,
+#     roomDescription,
+#     roomSize,
+#     maxCapacityOfpersons,
+#     extraFacilities,
+#     bookedFrom,
+#     bookedTill
+#   }
+# }
+  # mutation{
+  #   updateRoomWithDates(id:"60dda8c3231cf062bcd63e2f",checkIn:"2020-06-15", checkOut:"2020-06-20"){
+  #      bookedFrom,
+  #   bookedTill
+  #   }
+  # }
+
+#GET ALL ROOMS AFTER FILTERING
+# {
+#   rooms(checkIn:"2020-06-15", checkOut:"2020-06-20"){
+#     id,
+#     roomCategory,
+#     roomPrice,
+#     roomImages,
+#     roomDescription,
+#     roomSize,
+#     maxCapacityOfpersons,
+#     extraFacilities,
+#     bookedFrom,
+#     bookedTill
+#   }
+# }
+
+
+#GET ROOM BY ID
+# {
+#   room(id: "60dd8cc87d1d334e50b9cded"){
+#     id,
+#     roomCategory,
+#     roomPrice,
+#     roomImages,
+#     roomDescription,
+#     roomSize,
+#     maxCapacityOfpersons,
+#     extraFacilities,
+#     bookedFrom,
+#     bookedTill
+#   }
+# }
+
+#GET ALL USERS
+# {
+#   users{
+#     firstName
+#     lastName
+# 		email
+#     checkIn
+#     checkOut
+#     id
+#   }
+# }
+
+
+#GET USER BY ID
+# query{
+#   user(id:"60e3142e28e2ba47b00717db" ){
+#     firstName
+#     lastName
+#     email
+#     checkIn
+#     checkOut
+#   }
+# }
+
+mutation{
+  addUser(firstName:"Tersao", lastName:"Josre", email:"teresra@gmail.com",checkIn:"2020-08-14", checkOut:"2020-08-20"){
+    firstName,
+    lastName,
+    email,
+    checkIn,
+    checkOut
+  }
+}
+
+# mutation{
+#   updateUser( id: "60e3142e28e2ba47b00717db", firstName:"shreya", lastName:"chauhan", email:"shrey@gmail.com",checkIn:"2020-08-13", checkOut:"2020-08-14"){
+   
+#     id,
+#     firstName,
+#     lastName,
+#     email,
+#     checkIn,
+#     checkOut
+#   }
+# }
